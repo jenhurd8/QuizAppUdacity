@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    int score = 0;
+    private int score;
     boolean radioButton1Correct = false;
     boolean radioButton1Incorrect = false;
     boolean radioButton2Correct = false;
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         EditText question1field = (EditText) findViewById(R.id.answer1);
         String question1 = question1field.getText().toString();
 
-        if (question1.equals("LAN") || question1.equals("lan")) {
+        if (question1.equalsIgnoreCase("LAN")) {
             score++;
             Log.v("MainActivity", "score at question1: " + score);
         }
@@ -126,14 +126,10 @@ public class MainActivity extends AppCompatActivity {
         Context context = getApplicationContext();
         if (score == 5) {
             CharSequence text = "Congratulations! You received a perfect score: " + score + "/5";
-            int duration = Toast.LENGTH_LONG;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
         } else {
             CharSequence text = "Good job! Your score is: " + score + "/5";
-            int duration = Toast.LENGTH_LONG;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
+            Toast.makeText(context, text, Toast.LENGTH_LONG).show();
         }
         resetScore();
     }

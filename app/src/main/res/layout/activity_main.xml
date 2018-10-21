@@ -3,10 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <ImageView
@@ -39,7 +38,8 @@
                 android:id="@+id/answer1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Type your answer here" />
+                android:hint="@string/type_your_answer_here"
+                android:inputType="text"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -51,21 +51,21 @@
                 android:id="@+id/wd40"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="WD40 Cable"
+                android:text="@string/wd40_cable"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/ethernet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ethernet Cable"
+                android:text="@string/ethernet_cable"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/cat5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cat5 Cable"
+                android:text="@string/cat5_cable"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <TextView
@@ -100,7 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question4"
-                android:textSize="24dp" />
+                android:textSize="24sp" />
 
             <RadioGroup
                 android:layout_width="wrap_content"
@@ -128,27 +128,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question5"
-                android:textSize="24dp" />
+                android:textSize="24sp" />
 
             <CheckBox
                 android:id="@+id/apple"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Apple"
+                android:text="@string/apple"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/att"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ATT"
+                android:text="@string/att"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <CheckBox
                 android:id="@+id/hp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="HP"
+                android:text="@string/hp"
                 android:textAppearance="?android:textAppearanceMedium" />
 
             <Button
@@ -156,7 +156,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="checkScore"
-                android:text="Submit" />
+                android:text="@string/submit" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

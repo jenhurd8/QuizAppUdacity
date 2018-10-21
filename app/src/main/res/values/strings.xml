@@ -8,5 +8,13 @@
     <string name="question5">5) Which are popular computer brands?  </string>
     <string name="correct">Correct</string>
     <string name="incorrect">Incorrect</string>
+    <string name="att">ATT</string>
+    <string name="hp">HP</string>
+    <string name="submit">Submit</string>
+    <string name="apple">Apple</string>
+    <string name="cat5_cable">Cat5 Cable</string>
+    <string name="ethernet_cable">Ethernet Cable</string>
+    <string name="wd40_cable">WD40 Cable</string>
+    <string name="type_your_answer_here">Type your answer here</string>
 
 </resources>

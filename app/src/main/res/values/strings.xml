@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="title">Computer Basics Quiz</string>
+    <string name="question1">1) What is the abbreviation for local area network? </string>
+    <string name="question2">2) What is the most common network cable to connect a computer called? </string>
+    <string name="question3">3) Most computer monitors come with a hard drive installed </string>
+    <string name="question4">4) Many laptops can connect to a network wirelessly  </string>
+    <string name="question5">5) Which are popular computer brands?  </string>
+    <string name="correct">Correct</string>
+    <string name="incorrect">Incorrect</string>
+
+</resources>
